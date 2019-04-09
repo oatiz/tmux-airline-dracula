@@ -29,8 +29,6 @@ main() {
   tmux set-option -g status-left " #I #[fg=${dark_gray},reverse]${right_sep} "
   tmux set-option -g status-left-style "fg=${white},bg=${dark_purple},bold"
   ## tmux set-option -g status-right "${left_sep}#[bg=${black},reverse] %Y-%m-%d %H:%M "
-  # 设置状态栏右边内容，这里设置为时间信息
-  tmux set-option -g status-right 'CPU:#{cpu_percentage} | Battery: #{battery_icon} #{battery_percentage} #{battery_remain} | %a %h-%d %H:%M '
   tmux set-option -g status-right-style "fg=${light_purple},bg=${dark_gray}"
   tmux set-window-option -g window-status-activity-style "fg=${white},bg=${gray}"
   tmux set-window-option -g window-status-separator ''
